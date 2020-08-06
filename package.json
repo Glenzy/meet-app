@@ -2,10 +2,12 @@
   "name": "meet",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://glenzy.github.io/meet-app",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "atatus-spa": "^4.2.1",
     "axios": "^0.19.2",
     "moment": "^2.27.0",
     "nprogress": "^0.2.0",
@@ -17,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
